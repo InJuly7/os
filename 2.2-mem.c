@@ -7,8 +7,8 @@ int main(int argc,char *argv[])
 {
     int *p = malloc(sizeof(int));
     assert(p != NULL);
+    //  16进制输出8位前面补0
     printf("(%d) memory address of p: %08x\n", getpid(), (unsigned)p);
-
     *p = 0;
     while(1)
     {
