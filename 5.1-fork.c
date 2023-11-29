@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
     }
     else if (rc > 0)
     {
-        printf("hello, I am parent of %d (pid:%d)",rc,(int)getpid());
+        printf("hello, I am parent of %d (pid:%d)\n",rc,(int)getpid());
     }
     return 0;
 }

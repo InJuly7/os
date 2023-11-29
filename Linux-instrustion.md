@@ -24,3 +24,16 @@ ps aux |grep 2.1-cpu
 pkill 2.1-cpu
 ```
 
+将whereis wc 的输出 传入到stat中 
+```shell
+stat $(whereis wc)
+```
+将 可执行文件的输出 写入到文件中
+```
+wc 5.3-exec.c > newfile.txt
+```
+
+统计某一文件中 某个词出现的次数
+```
+grep -o printf 5.4.c | wc -l
+```
